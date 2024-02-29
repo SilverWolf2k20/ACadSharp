@@ -1,7 +1,6 @@
 ﻿using ACadSharp.Attributes;
 using CSMath;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace ACadSharp.Entities
 {
@@ -18,7 +17,7 @@ namespace ACadSharp.Entities
 				/// Has bulge flag
 				/// </summary>
 				[DxfCodeValue(72)]
-				public bool HasBulge => this.Bulges.Any();
+				public bool HasBulge => this.Bulges.Count > 0;
 
 				/// <summary>
 				/// Is closed flag
