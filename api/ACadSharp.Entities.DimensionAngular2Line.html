@@ -89,7 +89,7 @@
 
 
   <h1 id="ACadSharp_Entities_DimensionAngular2Line" data-uid="ACadSharp.Entities.DimensionAngular2Line" class="text-break">
-Class DimensionAngular2Line  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L14"><i class="bi bi-code-slash"></i></a>
+Class DimensionAngular2Line  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -247,13 +247,13 @@ public class DimensionAngular2Line : Dimension, IEntity, IHandledCadObject, IGeo
       <a class="xref" href="ACadSharp.Entities.Dimension.html#ACadSharp_Entities_Dimension_dimensionRadialLine_CSMath_XY_CSMath_XY_System_Double_System_Int16_">Dimension.dimensionRadialLine(XY, XY, double, short)</a>
     </div>
     <div>
-      <a class="xref" href="ACadSharp.Entities.Dimension.html#ACadSharp_Entities_Dimension_tableOnRemove_System_Object_ACadSharp_CollectionChangedEventArgs_">Dimension.tableOnRemove(object, CollectionChangedEventArgs)</a>
-    </div>
-    <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_BookColor">Entity.BookColor</a>
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_Color">Entity.Color</a>
+    </div>
+    <div>
+      <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_HasProxyGeometries">Entity.HasProxyGeometries</a>
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_IsInvisible">Entity.IsInvisible</a>
@@ -272,6 +272,9 @@ public class DimensionAngular2Line : Dimension, IEntity, IHandledCadObject, IGeo
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_Material">Entity.Material</a>
+    </div>
+    <div>
+      <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_PlotStyle">Entity.PlotStyle</a>
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_ProxyGeometries">Entity.ProxyGeometries</a>
@@ -358,7 +361,10 @@ public class DimensionAngular2Line : Dimension, IEntity, IHandledCadObject, IGeo
       <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_ToString">CadObject.ToString()</a>
     </div>
     <div>
-      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateCollection__1___0_ACadSharp_ICadCollection___0__">CadObject.updateCollection&lt;T&gt;(T, ICadCollection&lt;T&gt;)</a>
+      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateCollectionEntry__1___0_System_Action___0__ACadSharp_Objects_Collections_ObjectDictionaryCollection___0__">CadObject.updateCollectionEntry&lt;T&gt;(T, Action&lt;T&gt;, ObjectDictionaryCollection&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateTableEntry__1___0_System_Action___0__ACadSharp_Tables_Collections_Table___0__">CadObject.updateTableEntry&lt;T&gt;(T, Action&lt;T&gt;, Table&lt;T&gt;)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
@@ -407,7 +413,7 @@ Dxf class name <a class="xref" href="ACadSharp.DxfSubclassMarker.html#ACadSharp_
 
   <h3 id="ACadSharp_Entities_DimensionAngular2Line__ctor" data-uid="ACadSharp.Entities.DimensionAngular2Line.#ctor">
   DimensionAngular2Line()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L113"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor.</p>
@@ -438,7 +444,7 @@ Dxf class name <a class="xref" href="ACadSharp.DxfSubclassMarker.html#ACadSharp_
 
   <h3 id="ACadSharp_Entities_DimensionAngular2Line_AngleVertex" data-uid="ACadSharp.Entities.DimensionAngular2Line.AngleVertex">
   AngleVertex
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Definition point for diameter, radius, and angular dimensions (in WCS).</p>
@@ -471,7 +477,7 @@ public XYZ AngleVertex { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionAngular2Line_Center" data-uid="ACadSharp.Entities.DimensionAngular2Line.Center">
   Center
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the center point of the measured arc.</p>
@@ -503,7 +509,7 @@ public XYZ AngleVertex { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionAngular2Line_DimensionArc" data-uid="ACadSharp.Entities.DimensionAngular2Line.DimensionArc">
   DimensionArc
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Point defining dimension arc for angular dimensions (in OCS).</p>
@@ -536,7 +542,7 @@ public XYZ DimensionArc { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionAngular2Line_FirstPoint" data-uid="ACadSharp.Entities.DimensionAngular2Line.FirstPoint">
   FirstPoint
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Definition point for linear and angular dimensions (in WCS).</p>
@@ -569,7 +575,7 @@ public XYZ FirstPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionAngular2Line_Measurement" data-uid="ACadSharp.Entities.DimensionAngular2Line.Measurement">
   Measurement
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Actual measurement.</p>
@@ -601,7 +607,7 @@ public XYZ FirstPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionAngular2Line_ObjectName" data-uid="ACadSharp.Entities.DimensionAngular2Line.ObjectName">
   ObjectName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The CAD class name of an object.</p>
@@ -633,7 +639,7 @@ public XYZ FirstPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionAngular2Line_ObjectType" data-uid="ACadSharp.Entities.DimensionAngular2Line.ObjectType">
   ObjectType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get the object type.</p>
@@ -665,7 +671,7 @@ public XYZ FirstPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionAngular2Line_Offset" data-uid="ACadSharp.Entities.DimensionAngular2Line.Offset">
   Offset
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Definition point offset relative to the <a class="xref" href="ACadSharp.Entities.DimensionAngular2Line.html#ACadSharp_Entities_DimensionAngular2Line_Center">Center</a>.</p>
@@ -697,7 +703,7 @@ public XYZ FirstPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionAngular2Line_SecondPoint" data-uid="ACadSharp.Entities.DimensionAngular2Line.SecondPoint">
   SecondPoint
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Definition point for linear and angular dimensions (in WCS).</p>
@@ -730,7 +736,7 @@ public XYZ SecondPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionAngular2Line_SubclassMarker" data-uid="ACadSharp.Entities.DimensionAngular2Line.SubclassMarker">
   SubclassMarker
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L108"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Object Subclass marker.</p>
@@ -766,7 +772,7 @@ public XYZ SecondPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionAngular2Line_ApplyTransform_CSMath_Transform_" data-uid="ACadSharp.Entities.DimensionAngular2Line.ApplyTransform(CSMath.Transform)">
   ApplyTransform(Transform)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L118"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Apply a transform matrix to this entity.</p>
@@ -798,7 +804,7 @@ public XYZ SecondPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionAngular2Line_GetBoundingBox" data-uid="ACadSharp.Entities.DimensionAngular2Line.GetBoundingBox">
   GetBoundingBox()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L129"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the bounding box aligned with the axis XYZ that occupies this entity.</p>
@@ -831,7 +837,7 @@ public XYZ SecondPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionAngular2Line_UpdateBlock" data-uid="ACadSharp.Entities.DimensionAngular2Line.UpdateBlock">
   UpdateBlock()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L138"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Updates the block that represents this dimension.</p>
@@ -861,7 +867,7 @@ public XYZ SecondPoint { get; set; }</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAngular2Line.cs/#L15" class="edit-link">Edit this page</a>
         </div>
 
 

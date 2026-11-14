@@ -89,7 +89,7 @@
 
 
   <h1 id="ACadSharp_Entities_Arc" data-uid="ACadSharp.Entities.Arc" class="text-break">
-Class Arc  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L16"><i class="bi bi-code-slash"></i></a>
+Class Arc  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -161,6 +161,9 @@ public class Arc : Circle, IEntity, IHandledCadObject, IGeometricEntity, ICurve,
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_Color">Entity.Color</a>
     </div>
     <div>
+      <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_HasProxyGeometries">Entity.HasProxyGeometries</a>
+    </div>
+    <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_IsInvisible">Entity.IsInvisible</a>
     </div>
     <div>
@@ -177,6 +180,9 @@ public class Arc : Circle, IEntity, IHandledCadObject, IGeometricEntity, ICurve,
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_Material">Entity.Material</a>
+    </div>
+    <div>
+      <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_PlotStyle">Entity.PlotStyle</a>
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_ProxyGeometries">Entity.ProxyGeometries</a>
@@ -219,9 +225,6 @@ public class Arc : Circle, IEntity, IHandledCadObject, IGeometricEntity, ICurve,
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_getWorldMatrix_CSMath_Transform_CSMath_XYZ_CSMath_XYZ_CSMath_Matrix3__CSMath_Matrix3__">Entity.getWorldMatrix(Transform, XYZ, XYZ, out Matrix3, out Matrix3)</a>
-    </div>
-    <div>
-      <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_tableOnRemove_System_Object_ACadSharp_CollectionChangedEventArgs_">Entity.tableOnRemove(object, CollectionChangedEventArgs)</a>
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_transformNormal_CSMath_Transform_CSMath_XYZ_">Entity.transformNormal(Transform, XYZ)</a>
@@ -269,7 +272,10 @@ public class Arc : Circle, IEntity, IHandledCadObject, IGeometricEntity, ICurve,
       <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_ToString">CadObject.ToString()</a>
     </div>
     <div>
-      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateCollection__1___0_ACadSharp_ICadCollection___0__">CadObject.updateCollection&lt;T&gt;(T, ICadCollection&lt;T&gt;)</a>
+      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateCollectionEntry__1___0_System_Action___0__ACadSharp_Objects_Collections_ObjectDictionaryCollection___0__">CadObject.updateCollectionEntry&lt;T&gt;(T, Action&lt;T&gt;, ObjectDictionaryCollection&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateTableEntry__1___0_System_Action___0__ACadSharp_Tables_Collections_Table___0__">CadObject.updateTableEntry&lt;T&gt;(T, Action&lt;T&gt;, Table&lt;T&gt;)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
@@ -318,7 +324,7 @@ Dxf class name <a class="xref" href="ACadSharp.DxfSubclassMarker.html#ACadSharp_
 
   <h3 id="ACadSharp_Entities_Arc__ctor" data-uid="ACadSharp.Entities.Arc.#ctor">
   Arc()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor.</p>
@@ -345,7 +351,7 @@ Dxf class name <a class="xref" href="ACadSharp.DxfSubclassMarker.html#ACadSharp_
 
   <h3 id="ACadSharp_Entities_Arc__ctor_CSMath_XYZ_CSMath_XYZ_CSMath_XYZ_" data-uid="ACadSharp.Entities.Arc.#ctor(CSMath.XYZ,CSMath.XYZ,CSMath.XYZ)">
   Arc(XYZ, XYZ, XYZ)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L112"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the Arc class that passes through the specified center, start, and end points, using
@@ -390,7 +396,7 @@ parameter.</p>
 
   <h3 id="ACadSharp_Entities_Arc__ctor_CSMath_XYZ_CSMath_XYZ_CSMath_XYZ_CSMath_XYZ_" data-uid="ACadSharp.Entities.Arc.#ctor(CSMath.XYZ,CSMath.XYZ,CSMath.XYZ,CSMath.XYZ)">
   Arc(XYZ, XYZ, XYZ, XYZ)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the Arc class that passes through the specified start and end points, is centered at
@@ -438,7 +444,7 @@ is determined by the order of the points and the orientation of the normal vecto
 
   <h3 id="ACadSharp_Entities_Arc__ctor_CSMath_XYZ_System_Double_System_Double_System_Double_" data-uid="ACadSharp.Entities.Arc.#ctor(CSMath.XYZ,System.Double,System.Double,System.Double)">
   Arc(XYZ, double, double, double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="ACadSharp.Entities.Arc.html">Arc</a> class.</p>
@@ -480,7 +486,7 @@ is determined by the order of the points and the orientation of the normal vecto
 
   <h3 id="ACadSharp_Entities_Arc_EndAngle" data-uid="ACadSharp.Entities.Arc.EndAngle">
   EndAngle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The end angle in radians.</p>
@@ -516,7 +522,7 @@ public double EndAngle { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Arc_ObjectName" data-uid="ACadSharp.Entities.Arc.ObjectName">
   ObjectName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The CAD class name of an object.</p>
@@ -548,7 +554,7 @@ public double EndAngle { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Arc_ObjectType" data-uid="ACadSharp.Entities.Arc.ObjectType">
   ObjectType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get the object type.</p>
@@ -580,7 +586,7 @@ public double EndAngle { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Arc_StartAngle" data-uid="ACadSharp.Entities.Arc.StartAngle">
   StartAngle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The start angle in radians.</p>
@@ -613,7 +619,7 @@ public double StartAngle { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Arc_SubclassMarker" data-uid="ACadSharp.Entities.Arc.SubclassMarker">
   SubclassMarker
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Object Subclass marker.</p>
@@ -645,7 +651,7 @@ public double StartAngle { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Arc_Sweep" data-uid="ACadSharp.Entities.Arc.Sweep">
   Sweep
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sweep of the arc, in radians.</p>
@@ -681,7 +687,7 @@ public double StartAngle { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Arc_ApplyTransform_CSMath_Transform_" data-uid="ACadSharp.Entities.Arc.ApplyTransform(CSMath.Transform)">
   ApplyTransform(Transform)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L182"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Apply a transform matrix to this entity.</p>
@@ -713,7 +719,7 @@ public double StartAngle { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Arc_CreateFromBulge_CSMath_XY_CSMath_XY_System_Double_" data-uid="ACadSharp.Entities.Arc.CreateFromBulge(CSMath.XY,CSMath.XY,System.Double)">
   CreateFromBulge(XY, XY, double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L124"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates an arc using 2 points and a bulge.</p>
@@ -754,7 +760,7 @@ public double StartAngle { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Arc_GetBoundingBox" data-uid="ACadSharp.Entities.Arc.GetBoundingBox">
   GetBoundingBox()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L220"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the bounding box aligned with the axis XYZ that occupies this entity.</p>
@@ -787,7 +793,7 @@ public double StartAngle { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Arc_GetCenter_CSMath_XY_CSMath_XY_System_Double_" data-uid="ACadSharp.Entities.Arc.GetCenter(CSMath.XY,CSMath.XY,System.Double)">
   GetCenter(XY, XY, double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L157"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get the center coordinate from a start, end an a bulge value.</p>
@@ -832,7 +838,7 @@ public double StartAngle { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Arc_GetCenter_CSMath_XY_CSMath_XY_System_Double_System_Double__" data-uid="ACadSharp.Entities.Arc.GetCenter(CSMath.XY,CSMath.XY,System.Double,System.Double@)">
   GetCenter(XY, XY, double, out double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L170"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get the center coordinate from a start, end an a bulge value.</p>
@@ -880,7 +886,7 @@ public double StartAngle { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Arc_GetEndVertices_CSMath_XYZ__CSMath_XYZ__" data-uid="ACadSharp.Entities.Arc.GetEndVertices(CSMath.XYZ@,CSMath.XYZ@)">
   GetEndVertices(out XYZ, out XYZ)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L232"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Process the 2 points limiting the arc segment</p>
@@ -916,7 +922,7 @@ public double StartAngle { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Arc_PolygonalVertexes_System_Int32_" data-uid="ACadSharp.Entities.Arc.PolygonalVertexes(System.Int32)">
   PolygonalVertexes(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L253"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the arc in a list of vertexes.</p>
@@ -955,7 +961,7 @@ public double StartAngle { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Arc_ToArc2D" data-uid="ACadSharp.Entities.Arc.ToArc2D">
   ToArc2D()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L270"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -986,7 +992,7 @@ public double StartAngle { get; set; }</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L16" class="edit-link">Edit this page</a>
+          <a href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Arc.cs/#L17" class="edit-link">Edit this page</a>
         </div>
 
 

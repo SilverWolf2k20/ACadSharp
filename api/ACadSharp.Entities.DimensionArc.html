@@ -89,7 +89,7 @@
 
 
   <h1 id="ACadSharp_Entities_DimensionArc" data-uid="ACadSharp.Entities.DimensionArc" class="text-break">
-Class DimensionArc  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L15"><i class="bi bi-code-slash"></i></a>
+Class DimensionArc  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -248,13 +248,13 @@ public class DimensionArc : Dimension, IEntity, IHandledCadObject, IGeometricEnt
       <a class="xref" href="ACadSharp.Entities.Dimension.html#ACadSharp_Entities_Dimension_dimensionRadialLine_CSMath_XY_CSMath_XY_System_Double_System_Int16_">Dimension.dimensionRadialLine(XY, XY, double, short)</a>
     </div>
     <div>
-      <a class="xref" href="ACadSharp.Entities.Dimension.html#ACadSharp_Entities_Dimension_tableOnRemove_System_Object_ACadSharp_CollectionChangedEventArgs_">Dimension.tableOnRemove(object, CollectionChangedEventArgs)</a>
-    </div>
-    <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_BookColor">Entity.BookColor</a>
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_Color">Entity.Color</a>
+    </div>
+    <div>
+      <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_HasProxyGeometries">Entity.HasProxyGeometries</a>
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_IsInvisible">Entity.IsInvisible</a>
@@ -273,6 +273,9 @@ public class DimensionArc : Dimension, IEntity, IHandledCadObject, IGeometricEnt
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_Material">Entity.Material</a>
+    </div>
+    <div>
+      <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_PlotStyle">Entity.PlotStyle</a>
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_ProxyGeometries">Entity.ProxyGeometries</a>
@@ -359,7 +362,10 @@ public class DimensionArc : Dimension, IEntity, IHandledCadObject, IGeometricEnt
       <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_ToString">CadObject.ToString()</a>
     </div>
     <div>
-      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateCollection__1___0_ACadSharp_ICadCollection___0__">CadObject.updateCollection&lt;T&gt;(T, ICadCollection&lt;T&gt;)</a>
+      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateCollectionEntry__1___0_System_Action___0__ACadSharp_Objects_Collections_ObjectDictionaryCollection___0__">CadObject.updateCollectionEntry&lt;T&gt;(T, Action&lt;T&gt;, ObjectDictionaryCollection&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateTableEntry__1___0_System_Action___0__ACadSharp_Tables_Collections_Table___0__">CadObject.updateTableEntry&lt;T&gt;(T, Action&lt;T&gt;, Table&lt;T&gt;)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
@@ -408,7 +414,7 @@ Dxf class name <a class="xref" href="ACadSharp.DxfSubclassMarker.html#ACadSharp_
 
   <h3 id="ACadSharp_Entities_DimensionArc__ctor" data-uid="ACadSharp.Entities.DimensionArc.#ctor">
   DimensionArc()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor.</p>
@@ -439,7 +445,7 @@ Dxf class name <a class="xref" href="ACadSharp.DxfSubclassMarker.html#ACadSharp_
 
   <h3 id="ACadSharp_Entities_DimensionArc_Center" data-uid="ACadSharp.Entities.DimensionArc.Center">
   Center
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Center of the dimensioned arc (in WCS).</p>
@@ -472,7 +478,7 @@ public XYZ Center { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionArc_EndAngle" data-uid="ACadSharp.Entities.DimensionArc.EndAngle">
   EndAngle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>End angle in radians.</p>
@@ -505,7 +511,7 @@ public double EndAngle { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionArc_FirstPoint" data-uid="ACadSharp.Entities.DimensionArc.FirstPoint">
   FirstPoint
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Start point of the first extension line (in WCS).</p>
@@ -538,7 +544,7 @@ public XYZ FirstPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionArc_HasLeader" data-uid="ACadSharp.Entities.DimensionArc.HasLeader">
   HasLeader
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Flag indicating whether the dimension has a leader.</p>
@@ -571,7 +577,7 @@ public bool HasLeader { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionArc_IsPartial" data-uid="ACadSharp.Entities.DimensionArc.IsPartial">
   IsPartial
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Flag indicating whether the dimension covers a partial section of the arc.</p>
@@ -604,7 +610,7 @@ public bool IsPartial { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionArc_LeaderPoint1" data-uid="ACadSharp.Entities.DimensionArc.LeaderPoint1">
   LeaderPoint1
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>First leader point (in WCS).</p>
@@ -637,7 +643,7 @@ public XYZ LeaderPoint1 { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionArc_LeaderPoint2" data-uid="ACadSharp.Entities.DimensionArc.LeaderPoint2">
   LeaderPoint2
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Second leader point (in WCS).</p>
@@ -670,7 +676,7 @@ public XYZ LeaderPoint2 { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionArc_Measurement" data-uid="ACadSharp.Entities.DimensionArc.Measurement">
   Measurement
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Actual measurement.</p>
@@ -702,7 +708,7 @@ public XYZ LeaderPoint2 { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionArc_ObjectName" data-uid="ACadSharp.Entities.DimensionArc.ObjectName">
   ObjectName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The CAD class name of an object.</p>
@@ -734,7 +740,7 @@ public XYZ LeaderPoint2 { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionArc_ObjectType" data-uid="ACadSharp.Entities.DimensionArc.ObjectType">
   ObjectType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get the object type.</p>
@@ -766,7 +772,7 @@ public XYZ LeaderPoint2 { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionArc_SecondPoint" data-uid="ACadSharp.Entities.DimensionArc.SecondPoint">
   SecondPoint
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Start point of the second extension line (in WCS).</p>
@@ -799,7 +805,7 @@ public XYZ SecondPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionArc_StartAngle" data-uid="ACadSharp.Entities.DimensionArc.StartAngle">
   StartAngle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L98"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Start angle in radians.</p>
@@ -832,7 +838,7 @@ public double StartAngle { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionArc_SubclassMarker" data-uid="ACadSharp.Entities.DimensionArc.SubclassMarker">
   SubclassMarker
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L102"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Object Subclass marker.</p>
@@ -868,7 +874,7 @@ public double StartAngle { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionArc_ApplyTransform_CSMath_Transform_" data-uid="ACadSharp.Entities.DimensionArc.ApplyTransform(CSMath.Transform)">
   ApplyTransform(Transform)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Apply a transform matrix to this entity.</p>
@@ -900,7 +906,7 @@ public double StartAngle { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionArc_GetBoundingBox" data-uid="ACadSharp.Entities.DimensionArc.GetBoundingBox">
   GetBoundingBox()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L131"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the bounding box aligned with the axis XYZ that occupies this entity.</p>
@@ -933,7 +939,7 @@ public double StartAngle { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionArc_GetDxfClass" data-uid="ACadSharp.Entities.DimensionArc.GetDxfClass">
   GetDxfClass()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the <a class="xref" href="ACadSharp.Classes.DxfClass.html">DxfClass</a> instance associated with this class.</p>
@@ -966,7 +972,7 @@ public double StartAngle { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionArc_UpdateBlock" data-uid="ACadSharp.Entities.DimensionArc.UpdateBlock">
   UpdateBlock()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L125"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Updates the block that represents this dimension.</p>
@@ -996,7 +1002,7 @@ public double StartAngle { get; set; }</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L15" class="edit-link">Edit this page</a>
+          <a href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionArc.cs/#L16" class="edit-link">Edit this page</a>
         </div>
 
 

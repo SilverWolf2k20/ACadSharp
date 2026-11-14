@@ -89,7 +89,7 @@
 
 
   <h1 id="ACadSharp_Entities_Line" data-uid="ACadSharp.Entities.Line" class="text-break">
-Class Line  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L14"><i class="bi bi-code-slash"></i></a>
+Class Line  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -141,6 +141,9 @@ public class Line : Entity, IEntity, IHandledCadObject, IGeometricEntity, IOrien
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_Color">Entity.Color</a>
     </div>
     <div>
+      <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_HasProxyGeometries">Entity.HasProxyGeometries</a>
+    </div>
+    <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_IsInvisible">Entity.IsInvisible</a>
     </div>
     <div>
@@ -157,6 +160,9 @@ public class Line : Entity, IEntity, IHandledCadObject, IGeometricEntity, IOrien
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_Material">Entity.Material</a>
+    </div>
+    <div>
+      <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_PlotStyle">Entity.PlotStyle</a>
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_ProxyGeometries">Entity.ProxyGeometries</a>
@@ -199,9 +205,6 @@ public class Line : Entity, IEntity, IHandledCadObject, IGeometricEntity, IOrien
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_getWorldMatrix_CSMath_Transform_CSMath_XYZ_CSMath_XYZ_CSMath_Matrix3__CSMath_Matrix3__">Entity.getWorldMatrix(Transform, XYZ, XYZ, out Matrix3, out Matrix3)</a>
-    </div>
-    <div>
-      <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_tableOnRemove_System_Object_ACadSharp_CollectionChangedEventArgs_">Entity.tableOnRemove(object, CollectionChangedEventArgs)</a>
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_transformNormal_CSMath_Transform_CSMath_XYZ_">Entity.transformNormal(Transform, XYZ)</a>
@@ -249,7 +252,10 @@ public class Line : Entity, IEntity, IHandledCadObject, IGeometricEntity, IOrien
       <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_ToString">CadObject.ToString()</a>
     </div>
     <div>
-      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateCollection__1___0_ACadSharp_ICadCollection___0__">CadObject.updateCollection&lt;T&gt;(T, ICadCollection&lt;T&gt;)</a>
+      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateCollectionEntry__1___0_System_Action___0__ACadSharp_Objects_Collections_ObjectDictionaryCollection___0__">CadObject.updateCollectionEntry&lt;T&gt;(T, Action&lt;T&gt;, ObjectDictionaryCollection&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateTableEntry__1___0_System_Action___0__ACadSharp_Tables_Collections_Table___0__">CadObject.updateTableEntry&lt;T&gt;(T, Action&lt;T&gt;, Table&lt;T&gt;)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
@@ -298,7 +304,7 @@ Dxf class name <a class="xref" href="ACadSharp.DxfSubclassMarker.html#ACadSharp_
 
   <h3 id="ACadSharp_Entities_Line__ctor" data-uid="ACadSharp.Entities.Line.#ctor">
   Line()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor.</p>
@@ -325,7 +331,7 @@ Dxf class name <a class="xref" href="ACadSharp.DxfSubclassMarker.html#ACadSharp_
 
   <h3 id="ACadSharp_Entities_Line__ctor_CSMath_IVector_CSMath_IVector_" data-uid="ACadSharp.Entities.Line.#ctor(CSMath.IVector,CSMath.IVector)">
   Line(IVector, IVector)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Constructor with the start and end.</p>
@@ -359,7 +365,7 @@ Dxf class name <a class="xref" href="ACadSharp.DxfSubclassMarker.html#ACadSharp_
 
   <h3 id="ACadSharp_Entities_Line__ctor_CSMath_XYZ_CSMath_XYZ_" data-uid="ACadSharp.Entities.Line.#ctor(CSMath.XYZ,CSMath.XYZ)">
   Line(XYZ, XYZ)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Constructor with the start and end.</p>
@@ -397,7 +403,7 @@ Dxf class name <a class="xref" href="ACadSharp.DxfSubclassMarker.html#ACadSharp_
 
   <h3 id="ACadSharp_Entities_Line_EndPoint" data-uid="ACadSharp.Entities.Line.EndPoint">
   EndPoint
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>A 3D coordinate representing the end point of the object.</p>
@@ -430,7 +436,7 @@ public XYZ EndPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Line_Normal" data-uid="ACadSharp.Entities.Line.Normal">
   Normal
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies the three-dimensional normal unit vector for the object.</p>
@@ -463,7 +469,7 @@ public XYZ Normal { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Line_ObjectName" data-uid="ACadSharp.Entities.Line.ObjectName">
   ObjectName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The CAD class name of an object.</p>
@@ -495,7 +501,7 @@ public XYZ Normal { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Line_ObjectType" data-uid="ACadSharp.Entities.Line.ObjectType">
   ObjectType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get the object type.</p>
@@ -527,7 +533,7 @@ public XYZ Normal { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Line_StartPoint" data-uid="ACadSharp.Entities.Line.StartPoint">
   StartPoint
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>A 3D coordinate representing the start point of the object.</p>
@@ -560,7 +566,7 @@ public XYZ StartPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Line_SubclassMarker" data-uid="ACadSharp.Entities.Line.SubclassMarker">
   SubclassMarker
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Object Subclass marker.</p>
@@ -592,7 +598,7 @@ public XYZ StartPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Line_Thickness" data-uid="ACadSharp.Entities.Line.Thickness">
   Thickness
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies the distance a 2D object is extruded above or below its elevation.</p>
@@ -629,7 +635,7 @@ public double Thickness { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Line_ApplyTransform_CSMath_Transform_" data-uid="ACadSharp.Entities.Line.ApplyTransform(CSMath.Transform)">
   ApplyTransform(Transform)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Apply a transform matrix to this entity.</p>
@@ -661,7 +667,7 @@ public double Thickness { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Line_GetBoundingBox" data-uid="ACadSharp.Entities.Line.GetBoundingBox">
   GetBoundingBox()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the bounding box aligned with the axis XYZ that occupies this entity.</p>
@@ -694,7 +700,7 @@ public double Thickness { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Line_ToSegment3D" data-uid="ACadSharp.Entities.Line.ToSegment3D">
   ToSegment3D()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L94"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -725,7 +731,7 @@ public double Thickness { get; set; }</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Line.cs/#L15" class="edit-link">Edit this page</a>
         </div>
 
 

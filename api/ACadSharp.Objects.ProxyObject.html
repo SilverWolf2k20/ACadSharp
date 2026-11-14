@@ -188,7 +188,10 @@ public class ProxyObject : NonGraphicalObject, IHandledCadObject, INamedCadObjec
       <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_RemoveReactor_ACadSharp_CadObject_">CadObject.RemoveReactor(CadObject)</a>
     </div>
     <div>
-      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateCollection__1___0_ACadSharp_ICadCollection___0__">CadObject.updateCollection&lt;T&gt;(T, ICadCollection&lt;T&gt;)</a>
+      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateCollectionEntry__1___0_System_Action___0__ACadSharp_Objects_Collections_ObjectDictionaryCollection___0__">CadObject.updateCollectionEntry&lt;T&gt;(T, Action&lt;T&gt;, ObjectDictionaryCollection&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateTableEntry__1___0_System_Action___0__ACadSharp_Tables_Collections_Table___0__">CadObject.updateTableEntry&lt;T&gt;(T, Action&lt;T&gt;, Table&lt;T&gt;)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
@@ -268,10 +271,10 @@ public Stream BinaryData { get; set; }</code></pre>
 
 
 
-  <a id="ACadSharp_Objects_ProxyObject_ClassId_" data-uid="ACadSharp.Objects.ProxyObject.ClassId*"></a>
+  <a id="ACadSharp_Objects_ProxyObject_ClassNumber_" data-uid="ACadSharp.Objects.ProxyObject.ClassNumber*"></a>
 
-  <h3 id="ACadSharp_Objects_ProxyObject_ClassId" data-uid="ACadSharp.Objects.ProxyObject.ClassId">
-  ClassId
+  <h3 id="ACadSharp_Objects_ProxyObject_ClassNumber" data-uid="ACadSharp.Objects.ProxyObject.ClassNumber">
+  ClassNumber
   <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Objects/ProxyObject.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -281,7 +284,7 @@ public Stream BinaryData { get; set; }</code></pre>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[DxfCodeValue(new int[] { 91 })]
-public int ClassId { get; }</code></pre>
+public int ClassNumber { get; }</code></pre>
   </div>
 
 
@@ -305,10 +308,11 @@ public int ClassId { get; }</code></pre>
 
   <h3 id="ACadSharp_Objects_ProxyObject_Data" data-uid="ACadSharp.Objects.ProxyObject.Data">
   Data
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Objects/ProxyObject.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Objects/ProxyObject.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the retained data of the original object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -407,7 +411,8 @@ public int DrawingFormat { get; }</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Objects/ProxyObject.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the maintenance version number.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -536,7 +541,7 @@ public int ProxyClassId { get; }</code></pre>
 
   <h3 id="ACadSharp_Objects_ProxyObject_SubclassMarker" data-uid="ACadSharp.Objects.ProxyObject.SubclassMarker">
   SubclassMarker
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Objects/ProxyObject.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Objects/ProxyObject.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Object Subclass marker.</p>
@@ -568,10 +573,11 @@ public int ProxyClassId { get; }</code></pre>
 
   <h3 id="ACadSharp_Objects_ProxyObject_Version" data-uid="ACadSharp.Objects.ProxyObject.Version">
   Version
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Objects/ProxyObject.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Objects/ProxyObject.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the AutoCAD version.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">

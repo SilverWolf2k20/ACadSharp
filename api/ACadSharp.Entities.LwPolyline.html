@@ -89,7 +89,7 @@
 
 
   <h1 id="ACadSharp_Entities_LwPolyline" data-uid="ACadSharp.Entities.LwPolyline" class="text-break">
-Class LwPolyline  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyline.Vertex.cs/#L6"><i class="bi bi-code-slash"></i></a>
+Class LwPolyline  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyline.Vertex.cs/#L7"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -142,6 +142,9 @@ public class LwPolyline : Entity, IPolyline, IEntity, IHandledCadObject, IGeomet
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_Color">Entity.Color</a>
     </div>
     <div>
+      <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_HasProxyGeometries">Entity.HasProxyGeometries</a>
+    </div>
+    <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_IsInvisible">Entity.IsInvisible</a>
     </div>
     <div>
@@ -158,6 +161,9 @@ public class LwPolyline : Entity, IPolyline, IEntity, IHandledCadObject, IGeomet
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_Material">Entity.Material</a>
+    </div>
+    <div>
+      <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_PlotStyle">Entity.PlotStyle</a>
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_ProxyGeometries">Entity.ProxyGeometries</a>
@@ -197,9 +203,6 @@ public class LwPolyline : Entity, IPolyline, IEntity, IHandledCadObject, IGeomet
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_getWorldMatrix_CSMath_Transform_CSMath_XYZ_CSMath_XYZ_CSMath_Matrix3__CSMath_Matrix3__">Entity.getWorldMatrix(Transform, XYZ, XYZ, out Matrix3, out Matrix3)</a>
-    </div>
-    <div>
-      <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_tableOnRemove_System_Object_ACadSharp_CollectionChangedEventArgs_">Entity.tableOnRemove(object, CollectionChangedEventArgs)</a>
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_transformNormal_CSMath_Transform_CSMath_XYZ_">Entity.transformNormal(Transform, XYZ)</a>
@@ -247,7 +250,10 @@ public class LwPolyline : Entity, IPolyline, IEntity, IHandledCadObject, IGeomet
       <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_ToString">CadObject.ToString()</a>
     </div>
     <div>
-      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateCollection__1___0_ACadSharp_ICadCollection___0__">CadObject.updateCollection&lt;T&gt;(T, ICadCollection&lt;T&gt;)</a>
+      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateCollectionEntry__1___0_System_Action___0__ACadSharp_Objects_Collections_ObjectDictionaryCollection___0__">CadObject.updateCollectionEntry&lt;T&gt;(T, Action&lt;T&gt;, ObjectDictionaryCollection&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateTableEntry__1___0_System_Action___0__ACadSharp_Tables_Collections_Table___0__">CadObject.updateTableEntry&lt;T&gt;(T, Action&lt;T&gt;, Table&lt;T&gt;)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
@@ -305,7 +311,7 @@ Dxf class name <a class="xref" href="ACadSharp.DxfSubclassMarker.html#ACadSharp_
 
   <h3 id="ACadSharp_Entities_LwPolyline__ctor" data-uid="ACadSharp.Entities.LwPolyline.#ctor">
   LwPolyline()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L94"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor.</p>
@@ -332,7 +338,7 @@ Dxf class name <a class="xref" href="ACadSharp.DxfSubclassMarker.html#ACadSharp_
 
   <h3 id="ACadSharp_Entities_LwPolyline__ctor_System_Collections_Generic_IEnumerable_ACadSharp_Entities_LwPolyline_Vertex__" data-uid="ACadSharp.Entities.LwPolyline.#ctor(System.Collections.Generic.IEnumerable{ACadSharp.Entities.LwPolyline.Vertex})">
   LwPolyline(params IEnumerable&lt;Vertex&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L102"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="ACadSharp.Entities.LwPolyline.html">LwPolyline</a> class with the specified vertices.</p>
@@ -367,8 +373,8 @@ the collection.</p>
 
   <a id="ACadSharp_Entities_LwPolyline__ctor_" data-uid="ACadSharp.Entities.LwPolyline.#ctor*"></a>
 
-  <h3 id="ACadSharp_Entities_LwPolyline__ctor_System_Collections_Generic_IEnumerable_CSMath_XY__" data-uid="ACadSharp.Entities.LwPolyline.#ctor(System.Collections.Generic.IEnumerable{CSMath.XY})">
-  LwPolyline(params IEnumerable&lt;XY&gt;)
+  <h3 id="ACadSharp_Entities_LwPolyline__ctor_System_Collections_Generic_IEnumerable_CSMath_IVector__" data-uid="ACadSharp.Entities.LwPolyline.#ctor(System.Collections.Generic.IEnumerable{CSMath.IVector})">
+  LwPolyline(params IEnumerable&lt;IVector&gt;)
   <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -377,14 +383,13 @@ the collection.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LwPolyline(params IEnumerable&lt;XY&gt; vertices)</code></pre>
+    <pre><code class="lang-csharp hljs">public LwPolyline(params IEnumerable&lt;IVector&gt; vertices)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>vertices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="CSMath.XY.html">XY</a>&gt;</dt>
-    <dd><p>A collection of <a class="xref" href="CSMath.XY.html">XY</a> points representing the vertices of the polyline. Each point defines a vertex in
-the order it appears in the collection.</p>
+    <dt><code>vertices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="CSMath.IVector.html">IVector</a>&gt;</dt>
+    <dd><p>A collection of <a class="xref" href="CSMath.IVector.html">IVector</a> objects that define the vertices of the polyline.</p>
 </dd>
   </dl>
 
@@ -395,9 +400,9 @@ the order it appears in the collection.</p>
 
 
 
-  <h4 class="section" id="ACadSharp_Entities_LwPolyline__ctor_System_Collections_Generic_IEnumerable_CSMath_XY___remarks">Remarks</h4>
+  <h4 class="section" id="ACadSharp_Entities_LwPolyline__ctor_System_Collections_Generic_IEnumerable_CSMath_IVector___remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>This constructor allows you to create a lightweight polyline by specifying its vertices as a
-collection of <a class="xref" href="CSMath.XY.html">XY</a> points. The vertices are internally converted to <a class="xref" href="ACadSharp.Entities.LwPolyline.Vertex.html">LwPolyline.Vertex</a>
+collection of <a class="xref" href="CSMath.IVector.html">IVector</a> points. The vertices are internally converted to <a class="xref" href="ACadSharp.Entities.LwPolyline.Vertex.html">LwPolyline.Vertex</a>
 objects.</p>
 </div>
 
@@ -412,7 +417,7 @@ objects.</p>
 
   <h3 id="ACadSharp_Entities_LwPolyline_ConstantWidth" data-uid="ACadSharp.Entities.LwPolyline.ConstantWidth">
   ConstantWidth
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Constant width</p>
@@ -448,7 +453,7 @@ public double ConstantWidth { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_LwPolyline_Elevation" data-uid="ACadSharp.Entities.LwPolyline.Elevation">
   Elevation
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The current elevation of the object.</p>
@@ -481,7 +486,7 @@ public double Elevation { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_LwPolyline_Flags" data-uid="ACadSharp.Entities.LwPolyline.Flags">
   Flags
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Polyline flags.</p>
@@ -514,7 +519,7 @@ public LwPolylineFlags Flags { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_LwPolyline_IsClosed" data-uid="ACadSharp.Entities.LwPolyline.IsClosed">
   IsClosed
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates that the polyline is closed.</p>
@@ -546,7 +551,7 @@ public LwPolylineFlags Flags { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_LwPolyline_Normal" data-uid="ACadSharp.Entities.LwPolyline.Normal">
   Normal
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies the three-dimensional normal unit vector for the object.</p>
@@ -579,7 +584,7 @@ public XYZ Normal { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_LwPolyline_ObjectName" data-uid="ACadSharp.Entities.LwPolyline.ObjectName">
   ObjectName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The CAD class name of an object.</p>
@@ -611,7 +616,7 @@ public XYZ Normal { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_LwPolyline_ObjectType" data-uid="ACadSharp.Entities.LwPolyline.ObjectType">
   ObjectType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get the object type.</p>
@@ -643,7 +648,7 @@ public XYZ Normal { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_LwPolyline_SubclassMarker" data-uid="ACadSharp.Entities.LwPolyline.SubclassMarker">
   SubclassMarker
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Object Subclass marker.</p>
@@ -675,7 +680,7 @@ public XYZ Normal { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_LwPolyline_Thickness" data-uid="ACadSharp.Entities.LwPolyline.Thickness">
   Thickness
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies the distance a 2D object is extruded above or below its elevation.</p>
@@ -708,7 +713,7 @@ public double Thickness { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_LwPolyline_Vertices" data-uid="ACadSharp.Entities.LwPolyline.Vertices">
   Vertices
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyLine.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Vertices that form this LwPolyline</p>
@@ -846,7 +851,7 @@ public List&lt;LwPolyline.Vertex&gt; Vertices { get; }</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyline.Vertex.cs/#L6" class="edit-link">Edit this page</a>
+          <a href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/LwPolyline.Vertex.cs/#L7" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -89,7 +89,7 @@
 
 
   <h1 id="ACadSharp_Entities_DimensionAligned" data-uid="ACadSharp.Entities.DimensionAligned" class="text-break">
-Class DimensionAligned  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L14"><i class="bi bi-code-slash"></i></a>
+Class DimensionAligned  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -253,13 +253,13 @@ public class DimensionAligned : Dimension, IEntity, IHandledCadObject, IGeometri
       <a class="xref" href="ACadSharp.Entities.Dimension.html#ACadSharp_Entities_Dimension_dimensionRadialLine_CSMath_XY_CSMath_XY_System_Double_System_Int16_">Dimension.dimensionRadialLine(XY, XY, double, short)</a>
     </div>
     <div>
-      <a class="xref" href="ACadSharp.Entities.Dimension.html#ACadSharp_Entities_Dimension_tableOnRemove_System_Object_ACadSharp_CollectionChangedEventArgs_">Dimension.tableOnRemove(object, CollectionChangedEventArgs)</a>
-    </div>
-    <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_BookColor">Entity.BookColor</a>
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_Color">Entity.Color</a>
+    </div>
+    <div>
+      <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_HasProxyGeometries">Entity.HasProxyGeometries</a>
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_IsInvisible">Entity.IsInvisible</a>
@@ -278,6 +278,9 @@ public class DimensionAligned : Dimension, IEntity, IHandledCadObject, IGeometri
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_Material">Entity.Material</a>
+    </div>
+    <div>
+      <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_PlotStyle">Entity.PlotStyle</a>
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_ProxyGeometries">Entity.ProxyGeometries</a>
@@ -364,7 +367,10 @@ public class DimensionAligned : Dimension, IEntity, IHandledCadObject, IGeometri
       <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_ToString">CadObject.ToString()</a>
     </div>
     <div>
-      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateCollection__1___0_ACadSharp_ICadCollection___0__">CadObject.updateCollection&lt;T&gt;(T, ICadCollection&lt;T&gt;)</a>
+      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateCollectionEntry__1___0_System_Action___0__ACadSharp_Objects_Collections_ObjectDictionaryCollection___0__">CadObject.updateCollectionEntry&lt;T&gt;(T, Action&lt;T&gt;, ObjectDictionaryCollection&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateTableEntry__1___0_System_Action___0__ACadSharp_Tables_Collections_Table___0__">CadObject.updateTableEntry&lt;T&gt;(T, Action&lt;T&gt;, Table&lt;T&gt;)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
@@ -413,7 +419,7 @@ Dxf class name <a class="xref" href="ACadSharp.DxfSubclassMarker.html#ACadSharp_
 
   <h3 id="ACadSharp_Entities_DimensionAligned__ctor" data-uid="ACadSharp.Entities.DimensionAligned.#ctor">
   DimensionAligned()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L75"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor.</p>
@@ -440,7 +446,7 @@ Dxf class name <a class="xref" href="ACadSharp.DxfSubclassMarker.html#ACadSharp_
 
   <h3 id="ACadSharp_Entities_DimensionAligned__ctor_ACadSharp_Entities_DimensionType_" data-uid="ACadSharp.Entities.DimensionAligned.#ctor(ACadSharp.Entities.DimensionType)">
   DimensionAligned(DimensionType)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -471,7 +477,7 @@ Dxf class name <a class="xref" href="ACadSharp.DxfSubclassMarker.html#ACadSharp_
 
   <h3 id="ACadSharp_Entities_DimensionAligned__ctor_CSMath_XYZ_CSMath_XYZ_" data-uid="ACadSharp.Entities.DimensionAligned.#ctor(CSMath.XYZ,CSMath.XYZ)">
   DimensionAligned(XYZ, XYZ)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Constructor with the first and second point.</p>
@@ -509,7 +515,7 @@ Dxf class name <a class="xref" href="ACadSharp.DxfSubclassMarker.html#ACadSharp_
 
   <h3 id="ACadSharp_Entities_DimensionAligned_ExtLineRotation" data-uid="ACadSharp.Entities.DimensionAligned.ExtLineRotation">
   ExtLineRotation
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Linear dimension types with an oblique angle have an optional group code 52.
@@ -544,7 +550,7 @@ public double ExtLineRotation { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionAligned_FirstPoint" data-uid="ACadSharp.Entities.DimensionAligned.FirstPoint">
   FirstPoint
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Insertion point for clones of a dimension—Baseline and Continue (in OCS).</p>
@@ -577,7 +583,7 @@ public XYZ FirstPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionAligned_Measurement" data-uid="ACadSharp.Entities.DimensionAligned.Measurement">
   Measurement
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Actual measurement.</p>
@@ -609,7 +615,7 @@ public XYZ FirstPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionAligned_ObjectName" data-uid="ACadSharp.Entities.DimensionAligned.ObjectName">
   ObjectName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The CAD class name of an object.</p>
@@ -641,7 +647,7 @@ public XYZ FirstPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionAligned_ObjectType" data-uid="ACadSharp.Entities.DimensionAligned.ObjectType">
   ObjectType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get the object type.</p>
@@ -673,7 +679,7 @@ public XYZ FirstPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionAligned_Offset" data-uid="ACadSharp.Entities.DimensionAligned.Offset">
   Offset
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Definition point offset relative to the <a class="xref" href="ACadSharp.Entities.DimensionAligned.html#ACadSharp_Entities_DimensionAligned_SecondPoint">SecondPoint</a>.</p>
@@ -705,7 +711,7 @@ public XYZ FirstPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionAligned_SecondPoint" data-uid="ACadSharp.Entities.DimensionAligned.SecondPoint">
   SecondPoint
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Definition point for linear and angular dimensions(in WCS).</p>
@@ -738,7 +744,7 @@ public XYZ SecondPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionAligned_SubclassMarker" data-uid="ACadSharp.Entities.DimensionAligned.SubclassMarker">
   SubclassMarker
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Object Subclass marker.</p>
@@ -774,7 +780,7 @@ public XYZ SecondPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionAligned_ApplyTransform_CSMath_Transform_" data-uid="ACadSharp.Entities.DimensionAligned.ApplyTransform(CSMath.Transform)">
   ApplyTransform(Transform)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L94"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Apply a transform matrix to this entity.</p>
@@ -806,7 +812,7 @@ public XYZ SecondPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionAligned_GetBoundingBox" data-uid="ACadSharp.Entities.DimensionAligned.GetBoundingBox">
   GetBoundingBox()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the bounding box aligned with the axis XYZ that occupies this entity.</p>
@@ -839,7 +845,7 @@ public XYZ SecondPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_DimensionAligned_UpdateBlock" data-uid="ACadSharp.Entities.DimensionAligned.UpdateBlock">
   UpdateBlock()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L112"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Updates the block that represents this dimension.</p>
@@ -866,7 +872,7 @@ public XYZ SecondPoint { get; set; }</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/DimensionAligned.cs/#L15" class="edit-link">Edit this page</a>
         </div>
 
 

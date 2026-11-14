@@ -89,7 +89,7 @@
 
 
   <h1 id="ACadSharp_Entities_Dimension" data-uid="ACadSharp.Entities.Dimension" class="text-break">
-Class Dimension  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L21"><i class="bi bi-code-slash"></i></a>
+Class Dimension  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -153,6 +153,9 @@ public abstract class Dimension : Entity, IEntity, IHandledCadObject, IGeometric
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_Color">Entity.Color</a>
     </div>
     <div>
+      <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_HasProxyGeometries">Entity.HasProxyGeometries</a>
+    </div>
+    <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_IsInvisible">Entity.IsInvisible</a>
     </div>
     <div>
@@ -169,6 +172,9 @@ public abstract class Dimension : Entity, IEntity, IHandledCadObject, IGeometric
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_Material">Entity.Material</a>
+    </div>
+    <div>
+      <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_PlotStyle">Entity.PlotStyle</a>
     </div>
     <div>
       <a class="xref" href="ACadSharp.Entities.Entity.html#ACadSharp_Entities_Entity_ProxyGeometries">Entity.ProxyGeometries</a>
@@ -264,7 +270,10 @@ public abstract class Dimension : Entity, IEntity, IHandledCadObject, IGeometric
       <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_ToString">CadObject.ToString()</a>
     </div>
     <div>
-      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateCollection__1___0_ACadSharp_ICadCollection___0__">CadObject.updateCollection&lt;T&gt;(T, ICadCollection&lt;T&gt;)</a>
+      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateCollectionEntry__1___0_System_Action___0__ACadSharp_Objects_Collections_ObjectDictionaryCollection___0__">CadObject.updateCollectionEntry&lt;T&gt;(T, Action&lt;T&gt;, ObjectDictionaryCollection&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateTableEntry__1___0_System_Action___0__ACadSharp_Tables_Collections_Table___0__">CadObject.updateTableEntry&lt;T&gt;(T, Action&lt;T&gt;, Table&lt;T&gt;)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
@@ -313,7 +322,7 @@ Dxf class name <a class="xref" href="ACadSharp.DxfSubclassMarker.html#ACadSharp_
 
   <h3 id="ACadSharp_Entities_Dimension__ctor_ACadSharp_Entities_DimensionType_" data-uid="ACadSharp.Entities.Dimension.#ctor(ACadSharp.Entities.DimensionType)">
   Dimension(DimensionType)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L253"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -347,7 +356,7 @@ Dxf class name <a class="xref" href="ACadSharp.DxfSubclassMarker.html#ACadSharp_
 
   <h3 id="ACadSharp_Entities_Dimension__block" data-uid="ACadSharp.Entities.Dimension._block">
   _block
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L246"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -377,7 +386,7 @@ Dxf class name <a class="xref" href="ACadSharp.DxfSubclassMarker.html#ACadSharp_
 
   <h3 id="ACadSharp_Entities_Dimension__flags" data-uid="ACadSharp.Entities.Dimension._flags">
   _flags
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L249"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -412,7 +421,7 @@ Dxf class name <a class="xref" href="ACadSharp.DxfSubclassMarker.html#ACadSharp_
 
   <h3 id="ACadSharp_Entities_Dimension_AttachmentPoint" data-uid="ACadSharp.Entities.Dimension.AttachmentPoint">
   AttachmentPoint
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Attachment point.</p>
@@ -445,7 +454,7 @@ public AttachmentPointType AttachmentPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Dimension_Block" data-uid="ACadSharp.Entities.Dimension.Block">
   Block
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Block that contains the entities that make up the dimension picture.</p>
@@ -478,7 +487,7 @@ public BlockRecord Block { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Dimension_DefinitionPoint" data-uid="ACadSharp.Entities.Dimension.DefinitionPoint">
   DefinitionPoint
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Definition point for the dimension line (in WCS).</p>
@@ -511,7 +520,7 @@ public XYZ DefinitionPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Dimension_Flags" data-uid="ACadSharp.Entities.Dimension.Flags">
   Flags
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Dimension type.</p>
@@ -544,7 +553,7 @@ public DimensionType Flags { get; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Dimension_FlipArrow1" data-uid="ACadSharp.Entities.Dimension.FlipArrow1">
   FlipArrow1
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the first arrow.
@@ -583,7 +592,7 @@ space; otherwise, outside. This flag overrules the standard behavior.</p>
 
   <h3 id="ACadSharp_Entities_Dimension_FlipArrow2" data-uid="ACadSharp.Entities.Dimension.FlipArrow2">
   FlipArrow2
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the second arrow
@@ -622,7 +631,7 @@ space; otherwise, outside. This flag overrules the standard behavior.</p>
 
   <h3 id="ACadSharp_Entities_Dimension_HasStyleOverride" data-uid="ACadSharp.Entities.Dimension.HasStyleOverride">
   HasStyleOverride
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets a value indicating whether a style override is present in the extended data.</p>
@@ -659,7 +668,7 @@ settings.</p>
 
   <h3 id="ACadSharp_Entities_Dimension_HorizontalDirection" data-uid="ACadSharp.Entities.Dimension.HorizontalDirection">
   HorizontalDirection
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>All dimension types have an optional 51 group code, which indicates the horizontal direction for the dimension entity.The dimension entity determines the orientation of dimension text and lines for horizontal, vertical, and rotated linear dimensions
@@ -693,7 +702,7 @@ public double HorizontalDirection { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Dimension_InsertionPoint" data-uid="ACadSharp.Entities.Dimension.InsertionPoint">
   InsertionPoint
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L134"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Insertion point for clones of a dimension-Baseline and Continue(in OCS).</p>
@@ -726,7 +735,7 @@ public XYZ InsertionPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Dimension_IsAngular" data-uid="ACadSharp.Entities.Dimension.IsAngular">
   IsAngular
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L140"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates if the dimension is angular or linear.</p>
@@ -758,7 +767,7 @@ public XYZ InsertionPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Dimension_IsTextUserDefinedLocation" data-uid="ACadSharp.Entities.Dimension.IsTextUserDefinedLocation">
   IsTextUserDefinedLocation
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L145"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates if the dimension text has been positioned at a user-defined location rather than at the default location.</p>
@@ -790,7 +799,7 @@ public XYZ InsertionPoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Dimension_LineSpacingFactor" data-uid="ACadSharp.Entities.Dimension.LineSpacingFactor">
   LineSpacingFactor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L173"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Dimension text-line spacing factor.</p>
@@ -827,7 +836,7 @@ public double LineSpacingFactor { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Dimension_LineSpacingStyle" data-uid="ACadSharp.Entities.Dimension.LineSpacingStyle">
   LineSpacingStyle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L179"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Dimension text line-spacing style.</p>
@@ -860,7 +869,7 @@ public LineSpacingStyleType LineSpacingStyle { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Dimension_Measurement" data-uid="ACadSharp.Entities.Dimension.Measurement">
   Measurement
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L185"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Actual measurement.</p>
@@ -893,7 +902,7 @@ public abstract double Measurement { get; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Dimension_Normal" data-uid="ACadSharp.Entities.Dimension.Normal">
   Normal
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L189"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies the three-dimensional normal unit vector for the object.</p>
@@ -926,7 +935,7 @@ public XYZ Normal { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Dimension_Style" data-uid="ACadSharp.Entities.Dimension.Style">
   Style
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L195"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Dimension style.</p>
@@ -959,7 +968,7 @@ public DimensionStyle Style { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Dimension_SubclassMarker" data-uid="ACadSharp.Entities.Dimension.SubclassMarker">
   SubclassMarker
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L211"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Object Subclass marker.</p>
@@ -991,7 +1000,7 @@ public DimensionStyle Style { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Dimension_Text" data-uid="ACadSharp.Entities.Dimension.Text">
   Text
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L222"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets an explicit dimension text to be displayed instead of the standard
@@ -1030,7 +1039,7 @@ If &quot; &quot; (one blank space), the text is to be suppressed. Anything else 
 
   <h3 id="ACadSharp_Entities_Dimension_TextMiddlePoint" data-uid="ACadSharp.Entities.Dimension.TextMiddlePoint">
   TextMiddlePoint
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L228"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Middle point of dimension text(in OCS).</p>
@@ -1063,7 +1072,7 @@ public XYZ TextMiddlePoint { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Dimension_TextRotation" data-uid="ACadSharp.Entities.Dimension.TextRotation">
   TextRotation
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L237"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Rotation angle of the dimension text away from its default orientation (the direction of the dimension line).</p>
@@ -1099,7 +1108,7 @@ public double TextRotation { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Dimension_Version" data-uid="ACadSharp.Entities.Dimension.Version">
   Version
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L243"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Version number.</p>
@@ -1136,7 +1145,7 @@ public byte Version { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Dimension_ApplyTransform_CSMath_Transform_" data-uid="ACadSharp.Entities.Dimension.ApplyTransform(CSMath.Transform)">
   ApplyTransform(Transform)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L260"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Apply a transform matrix to this entity.</p>
@@ -1168,7 +1177,7 @@ public byte Version { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Dimension_Clone" data-uid="ACadSharp.Entities.Dimension.Clone">
   Clone()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L276"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a new object that is a copy of the current instance.</p>
@@ -1204,7 +1213,7 @@ public byte Version { get; set; }</code></pre>
 
   <h3 id="ACadSharp_Entities_Dimension_GetActiveDimensionStyle" data-uid="ACadSharp.Entities.Dimension.GetActiveDimensionStyle">
   GetActiveDimensionStyle()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L293"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L294"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves the currently active dimension style, including any style overrides that are applied.</p>
@@ -1243,7 +1252,7 @@ set.</p>
 
   <h3 id="ACadSharp_Entities_Dimension_GetMeasurementText" data-uid="ACadSharp.Entities.Dimension.GetMeasurementText">
   GetMeasurementText()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L323"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get the measurement text from the actual <a class="xref" href="ACadSharp.Entities.Dimension.html#ACadSharp_Entities_Dimension_Measurement">Measurement</a> value.</p>
@@ -1275,7 +1284,7 @@ set.</p>
 
   <h3 id="ACadSharp_Entities_Dimension_GetMeasurementText_ACadSharp_Tables_DimensionStyle_" data-uid="ACadSharp.Entities.Dimension.GetMeasurementText(ACadSharp.Tables.DimensionStyle)">
   GetMeasurementText(DimensionStyle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L333"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get the measurement text from the actual <a class="xref" href="ACadSharp.Entities.Dimension.html#ACadSharp_Entities_Dimension_Measurement">Measurement</a> value.</p>
@@ -1313,7 +1322,7 @@ set.</p>
 
   <h3 id="ACadSharp_Entities_Dimension_GetStyleOverrideMap" data-uid="ACadSharp.Entities.Dimension.GetStyleOverrideMap">
   GetStyleOverrideMap()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L422"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves a map of style override properties from the extended data, if present and valid.</p>
@@ -1352,7 +1361,7 @@ used to access or apply dimension style overrides defined in the extended data.<
 
   <h3 id="ACadSharp_Entities_Dimension_SetDimensionOverride_ACadSharp_Tables_DimensionStyle_" data-uid="ACadSharp.Entities.Dimension.SetDimensionOverride(ACadSharp.Tables.DimensionStyle)">
   SetDimensionOverride(DimensionStyle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L474"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L475"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Applies the specified dimension style override to the current object, updating its extended data to reflect the
@@ -1392,7 +1401,7 @@ method to persist style overrides for dimension objects in environments that sup
 
   <h3 id="ACadSharp_Entities_Dimension_SetStyleOverrideMap_ACadSharp_DxfClassMap_" data-uid="ACadSharp.Entities.Dimension.SetStyleOverrideMap(ACadSharp.DxfClassMap)">
   SetStyleOverrideMap(DxfClassMap)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L513"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L514"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the style override mapping for the current object using the specified DXF class map.</p>
@@ -1431,7 +1440,7 @@ dimension style overrides in the object's extended data.</p>
 
   <h3 id="ACadSharp_Entities_Dimension_UpdateBlock" data-uid="ACadSharp.Entities.Dimension.UpdateBlock">
   UpdateBlock()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L530"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L531"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Updates the block that represents this dimension.</p>
@@ -1458,7 +1467,7 @@ dimension style overrides in the object's extended data.</p>
 
   <h3 id="ACadSharp_Entities_Dimension_angularBlock_System_Double_CSMath_XY_CSMath_XY_System_Double_System_Boolean_" data-uid="ACadSharp.Entities.Dimension.angularBlock(System.Double,CSMath.XY,CSMath.XY,System.Double,System.Boolean)">
   angularBlock(double, XY, XY, double, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L584"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L580"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1497,7 +1506,7 @@ dimension style overrides in the object's extended data.</p>
 
   <h3 id="ACadSharp_Entities_Dimension_centerCross_CSMath_XYZ_System_Double_ACadSharp_Tables_DimensionStyle_" data-uid="ACadSharp.Entities.Dimension.centerCross(CSMath.XYZ,System.Double,ACadSharp.Tables.DimensionStyle)">
   centerCross(XYZ, double, DimensionStyle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L675"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L671"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1537,7 +1546,7 @@ dimension style overrides in the object's extended data.</p>
 
   <h3 id="ACadSharp_Entities_Dimension_createBlock" data-uid="ACadSharp.Entities.Dimension.createBlock">
   createBlock()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L717"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L713"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1563,7 +1572,7 @@ dimension style overrides in the object's extended data.</p>
 
   <h3 id="ACadSharp_Entities_Dimension_createDefinitionPoint_CSMath_XYZ_" data-uid="ACadSharp.Entities.Dimension.createDefinitionPoint(CSMath.XYZ)">
   createDefinitionPoint(XYZ)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L733"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L729"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1599,7 +1608,7 @@ dimension style overrides in the object's extended data.</p>
 
   <h3 id="ACadSharp_Entities_Dimension_createTextEntity_CSMath_XYZ_System_String_" data-uid="ACadSharp.Entities.Dimension.createTextEntity(CSMath.XYZ,System.String)">
   createTextEntity(XYZ, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L738"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L734"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1637,7 +1646,7 @@ dimension style overrides in the object's extended data.</p>
 
   <h3 id="ACadSharp_Entities_Dimension_dimensionArrow_CSMath_XYZ_CSMath_XYZ_ACadSharp_Tables_DimensionStyle_ACadSharp_Tables_BlockRecord_" data-uid="ACadSharp.Entities.Dimension.dimensionArrow(CSMath.XYZ,CSMath.XYZ,ACadSharp.Tables.DimensionStyle,ACadSharp.Tables.BlockRecord)">
   dimensionArrow(XYZ, XYZ, DimensionStyle, BlockRecord)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L751"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L747"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1679,7 +1688,7 @@ dimension style overrides in the object's extended data.</p>
 
   <h3 id="ACadSharp_Entities_Dimension_dimensionLine_CSMath_XYZ_CSMath_XYZ_ACadSharp_Tables_DimensionStyle_" data-uid="ACadSharp.Entities.Dimension.dimensionLine(CSMath.XYZ,CSMath.XYZ,ACadSharp.Tables.DimensionStyle)">
   dimensionLine(XYZ, XYZ, DimensionStyle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L564"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L560"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1719,7 +1728,7 @@ dimension style overrides in the object's extended data.</p>
 
   <h3 id="ACadSharp_Entities_Dimension_dimensionRadialLine_CSMath_XY_CSMath_XY_System_Double_System_Int16_" data-uid="ACadSharp.Entities.Dimension.dimensionRadialLine(CSMath.XY,CSMath.XY,System.Double,System.Int16)">
   dimensionRadialLine(XY, XY, double, short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L785"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L781"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1761,7 +1770,7 @@ dimension style overrides in the object's extended data.</p>
 
   <h3 id="ACadSharp_Entities_Dimension_extensionLine_CSMath_XYZ_CSMath_XYZ_ACadSharp_Tables_DimensionStyle_ACadSharp_Tables_LineType_" data-uid="ACadSharp.Entities.Dimension.extensionLine(CSMath.XYZ,CSMath.XYZ,ACadSharp.Tables.DimensionStyle,ACadSharp.Tables.LineType)">
   extensionLine(XYZ, XYZ, DimensionStyle, LineType)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L574"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L570"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1799,44 +1808,11 @@ dimension style overrides in the object's extended data.</p>
 
 
 
-  <a id="ACadSharp_Entities_Dimension_tableOnRemove_" data-uid="ACadSharp.Entities.Dimension.tableOnRemove*"></a>
-
-  <h3 id="ACadSharp_Entities_Dimension_tableOnRemove_System_Object_ACadSharp_CollectionChangedEventArgs_" data-uid="ACadSharp.Entities.Dimension.tableOnRemove(System.Object,ACadSharp.CollectionChangedEventArgs)">
-  tableOnRemove(object, CollectionChangedEventArgs)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L800"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void tableOnRemove(object sender, CollectionChangedEventArgs e)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
-    <dt><code>e</code> <a class="xref" href="ACadSharp.CollectionChangedEventArgs.html">CollectionChangedEventArgs</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L21" class="edit-link">Edit this page</a>
+          <a href="https://github.com/SilverWolf2k20/ACadSharp/blob/master/src/ACadSharp/Entities/Dimension.cs/#L22" class="edit-link">Edit this page</a>
         </div>
 
 
